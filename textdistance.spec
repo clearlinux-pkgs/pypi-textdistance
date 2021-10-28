@@ -4,7 +4,7 @@
 #
 Name     : textdistance
 Version  : 4.2.2
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/11/b9/f1f307bf32749043bc7335ec97fa4e917b2465f8c18589735cdc5a0db329/textdistance-4.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/11/b9/f1f307bf32749043bc7335ec97fa4e917b2465f8c18589735cdc5a0db329/textdistance-4.2.2.tar.gz
 Summary  : Compute distance between the two texts.
