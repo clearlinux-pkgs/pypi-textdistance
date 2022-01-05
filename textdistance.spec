@@ -4,7 +4,7 @@
 #
 Name     : textdistance
 Version  : 4.2.2
-Release  : 13
+Release  : 14
 URL      : https://files.pythonhosted.org/packages/11/b9/f1f307bf32749043bc7335ec97fa4e917b2465f8c18589735cdc5a0db329/textdistance-4.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/11/b9/f1f307bf32749043bc7335ec97fa4e917b2465f8c18589735cdc5a0db329/textdistance-4.2.2.tar.gz
 Summary  : Compute distance between the two texts.
@@ -54,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641409853
+export SOURCE_DATE_EPOCH=1641423931
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
