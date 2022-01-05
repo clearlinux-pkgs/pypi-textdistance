@@ -4,7 +4,7 @@
 #
 Name     : textdistance
 Version  : 4.2.2
-Release  : 12
+Release  : 13
 URL      : https://files.pythonhosted.org/packages/11/b9/f1f307bf32749043bc7335ec97fa4e917b2465f8c18589735cdc5a0db329/textdistance-4.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/11/b9/f1f307bf32749043bc7335ec97fa4e917b2465f8c18589735cdc5a0db329/textdistance-4.2.2.tar.gz
 Summary  : Compute distance between the two texts.
@@ -13,17 +13,7 @@ License  : MIT
 Requires: textdistance-license = %{version}-%{release}
 Requires: textdistance-python = %{version}-%{release}
 Requires: textdistance-python3 = %{version}-%{release}
-Requires: abydos
-Requires: jellyfish
-Requires: numpy
-Requires: python-Levenshtein
-Requires: pyxDamerauLevenshtein
-BuildRequires : abydos
 BuildRequires : buildreq-distutils3
-BuildRequires : jellyfish
-BuildRequires : numpy
-BuildRequires : python-Levenshtein
-BuildRequires : pyxDamerauLevenshtein
 
 %description
 ![TextDistance logo](logo.png)
@@ -64,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635351064
+export SOURCE_DATE_EPOCH=1641409853
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -74,14 +64,14 @@ export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
-python3 setup.py build
+python3 -m build --wheel --skip-dependency-check --no-isolation
 
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/textdistance
 cp %{_builddir}/textdistance-4.2.2/LICENSE %{buildroot}/usr/share/package-licenses/textdistance/1cd37cfcc5e8192f596e3a6bbef042ec23d05ce8
-python3 -tt setup.py build  install --root=%{buildroot}
+pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
