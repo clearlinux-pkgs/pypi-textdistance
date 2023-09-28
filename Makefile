@@ -1,5 +1,5 @@
 PKG_NAME := pypi-textdistance
-URL = https://files.pythonhosted.org/packages/85/1e/2a567b5ad7ca6d2c0edce788e72a7ae6da088c3f8b7ffd20041e873518ee/textdistance-4.5.0.tar.gz
+URL = https://files.pythonhosted.org/packages/74/e5/eca4fb81146a144b64153d7014122318d2b0632c7c15d847cd755db6539c/textdistance-4.6.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
