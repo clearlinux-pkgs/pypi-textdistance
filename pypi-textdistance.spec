@@ -7,7 +7,7 @@
 #
 Name     : pypi-textdistance
 Version  : 4.6.3
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/01/68/97ac72dd781301d6a52140066c68400c96f1a91f69737959e414844749b0/textdistance-4.6.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/01/68/97ac72dd781301d6a52140066c68400c96f1a91f69737959e414844749b0/textdistance-4.6.3.tar.gz
 Summary  : Compute distance between the two texts.
